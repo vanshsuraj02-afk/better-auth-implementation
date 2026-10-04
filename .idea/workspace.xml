@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c38d8c-42a3-4b80-a503-6daa4b1fc36a" name="Changes" comment="initialisation of app">
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...all]/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/browser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/browser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/commonInputTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/commonInputTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/internal/class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/internal/class.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/internal/prismaNamespace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/internal/prismaNamespace.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/internal/prismaNamespaceBrowser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/internal/prismaNamespaceBrowser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/prisma/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/prisma/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-    </list>
+    <list default="true" id="80c38d8c-42a3-4b80-a503-6daa4b1fc36a" name="Changes" comment="feat: implement authentication models and handlers with Prisma integration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,67 +20,67 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000000002167" />
-      <entry key="S10" value="1.0000015205863233" />
-      <entry key="S30" value="1.056685936521601" />
-      <entry key="S60" value="1.8032859859130985" />
-      <entry key="M2" value="4.390287847318161" />
-      <entry key="M5" value="11.026486288286325" />
-      <entry key="M10" value="16.684650333658304" />
-      <entry key="M15" value="19.65770500053233" />
-      <entry key="M30" value="23.898425188655686" />
-      <entry key="H1" value="26.91300641371345" />
-      <entry key="H2" value="28.78801976612417" />
-      <entry key="H4" value="29.84646456388004" />
-      <entry key="D1" value="36.233460397750406" />
-      <entry key="W1" value="108.7109576862481" />
+      <entry key="MS100" value="4.013992563676005E-61" />
+      <entry key="MS500" value="1.404933530873449E-12" />
+      <entry key="S2" value="0.0027725030676148707" />
+      <entry key="S5" value="0.267807899249471" />
+      <entry key="S10" value="1.338005257005243" />
+      <entry key="S30" value="4.279498756197593" />
+      <entry key="S60" value="6.157933389484095" />
+      <entry key="M2" value="7.678887954406204" />
+      <entry key="M5" value="8.941471811015134" />
+      <entry key="M10" value="9.445248311917437" />
+      <entry key="M15" value="9.624175099372351" />
+      <entry key="M30" value="9.809005812921239" />
+      <entry key="H1" value="9.903715767955628" />
+      <entry key="H2" value="9.95165896794624" />
+      <entry key="H4" value="9.975779485779507" />
+      <entry key="D1" value="9.998441421409522" />
+      <entry key="W1" value="48.41440131914435" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="8.271770326357759E-177" />
-      <entry key="M15" value="4.090084792331433E-118" />
-      <entry key="M30" value="2.0223958050627036E-59" />
-      <entry key="H1" value="4.497113518737878E-30" />
-      <entry key="H2" value="2.1280965605164446E-15" />
-      <entry key="H4" value="5.326999282400203E-8" />
-      <entry key="D1" value="0.28234545550264717" />
-      <entry key="W1" value="4.945671176315627" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000043732" />
+      <entry key="S5" value="1.000028857256669" />
+      <entry key="S10" value="1.005858179716115" />
+      <entry key="S30" value="1.2547988136924886" />
+      <entry key="S60" value="1.700890618245618" />
+      <entry key="M2" value="2.1783743838995817" />
+      <entry key="M5" value="2.616714748594867" />
+      <entry key="M10" value="2.7978296673118335" />
+      <entry key="M15" value="2.862761310348461" />
+      <entry key="M30" value="2.930120214572179" />
+      <entry key="H1" value="2.964739002738878" />
+      <entry key="H2" value="2.982288463132633" />
+      <entry key="H4" value="2.991123875932635" />
+      <entry key="D1" value="2.9989719174465623" />
+      <entry key="W1" value="5.893734982758513" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227492140118" />
-      <entry key="MS500" value="0.9876008614453725" />
-      <entry key="S2" value="0.9968856972203758" />
-      <entry key="S5" value="0.9987531130854905" />
-      <entry key="S10" value="0.999377875511961" />
-      <entry key="S30" value="1.0563823871860616" />
-      <entry key="S60" value="1.802497773390759" />
-      <entry key="M2" value="4.388842242902317" />
-      <entry key="M5" value="11.0249536690204" />
-      <entry key="M10" value="16.68351899282557" />
-      <entry key="M15" value="19.65683580441224" />
-      <entry key="M30" value="23.89791899135741" />
-      <entry key="H1" value="26.912731476875102" />
-      <entry key="H2" value="28.787876140408645" />
-      <entry key="H4" value="29.846391157711412" />
-      <entry key="D1" value="36.51577098632895" />
-      <entry key="W1" value="113.65657905352731" />
+      <entry key="MS100" value="0.002107867649422708" />
+      <entry key="MS500" value="0.2915873424484523" />
+      <entry key="S2" value="0.7375631605666644" />
+      <entry key="S5" value="1.148766748051227" />
+      <entry key="S10" value="2.2733012054533783" />
+      <entry key="S30" value="5.4883986506932185" />
+      <entry key="S60" value="7.821893142871838" />
+      <entry key="M2" value="9.831945913064601" />
+      <entry key="M5" value="11.545640581021848" />
+      <entry key="M10" value="12.236313719427647" />
+      <entry key="M15" value="12.482310136421416" />
+      <entry key="M30" value="12.736752491051712" />
+      <entry key="H1" value="12.86725251284604" />
+      <entry key="H2" value="12.933342379995777" />
+      <entry key="H4" value="12.966599849345588" />
+      <entry key="D1" value="12.997362581354901" />
+      <entry key="W1" value="54.30810118228733" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3J8NtJaj1DILzcBNO6M1rOXUMGR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,7 +108,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -149,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789040912446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: implement authentication models and handlers with Prisma integration">
+      <option name="closed" value="true" />
+      <created>1789472936255</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1789472936255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ThunderClientSettings">
@@ -161,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialisation of app" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialisation of app" />
+    <MESSAGE value="feat: implement authentication models and handlers with Prisma integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement authentication models and handlers with Prisma integration" />
   </component>
 </project>
